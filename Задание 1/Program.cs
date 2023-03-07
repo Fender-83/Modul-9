@@ -13,11 +13,11 @@ namespace Задание_1
             {
                 Exception[] exc =
                 {
-                new NullExc("Аргумент является null!"),
-                new ArgumentExc("Непустой аргумент!"),
-                new DivideByZeroExc("Деление на ноль недопустимо!"),
-                new FileNotFoundExс("Файл не найден!"),
-                new IndexOutOfRangeExc("Выход за пределы границ массива!")
+                new FileNotFoundException("Файл не найден!"),
+                new ArgumentNullException("Аргумент является null!"),
+                new IndexOutOfRangeException("Выход за пределы границ массива!"),
+                new DivideByZeroException("Деление на ноль недопустимо!"),
+                new ArgumentException ("Непустой аргумент!"),
             };
 
                 foreach (var error in exc)
@@ -35,4 +35,4 @@ namespace Задание_1
             }
         }
     }
-}
+
