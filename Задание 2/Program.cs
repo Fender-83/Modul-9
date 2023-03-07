@@ -13,7 +13,7 @@ namespace Задание_2
             string[] lastname = new string[5];
             for (int i = 0; i < lastname.Length; i++)
             {
-                Console.WriteLine("Введите фмилию " + (i + 1) + "-й персоны");
+                Console.WriteLine("Введите фамилию " + (i + 1) + "-й персоны");
                 lastname[i] = Console.ReadLine();
             }
             Event Event = new Event();
@@ -35,14 +35,8 @@ namespace Задание_2
             switch (choice)
             {
                 case 1:
-                    foreach (var i in lastnames)
-                    {
-                        Console.Write(" ");
-                    }
-                    Console.WriteLine();
-
+                   
                     Array.Sort(lastnames);
-
 
                     foreach (var i in lastnames)
                     {
@@ -53,11 +47,7 @@ namespace Задание_2
                     return;
 
                 case 2:
-                    foreach (var i in lastnames)
-                    {
-                        Console.Write(" ");
-                    }
-                    Console.WriteLine();
+                   
 
                     Array.Sort(lastnames);
                     Array.Reverse(lastnames);
